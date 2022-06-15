@@ -63,6 +63,11 @@ function showContact(contactId) {
   $(".last-name").html(contact.lastName);
   $(".phone-number").html(contact.phoneNumber);
   $(".work-email-address").html(contact.workEmailAddress);
+  $(".work-email-address").not(function(index, span) {
+    if(span.innerHTML === ""){
+      span.parentElement.remove();
+    }
+  })
   $(".personal-email-address").html(contact.personalEmailAddress);
   $(".address").html(contact.address);
   let buttons = $("#buttons");
