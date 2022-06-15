@@ -43,7 +43,7 @@ Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
 };
 
-// User Interface Logic ---------
+// User Interface Logic 
 let addressBook = new AddressBook();
 
 function displayContactDetails(addressBookToDisplay) {
